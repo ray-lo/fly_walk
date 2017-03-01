@@ -45,6 +45,9 @@ public class ControllerThread extends Thread  {
 	public void updateSetting(Setting setting){
 		this.setting = setting;
 	}
+	public void setStartTime(long startTime){
+		this.startTime = startTime;
+	}
 	public void run(){
 		while (isRunning){
 			ChannelsStatusAndTimeStamp currentCSTS = setting.getChannelsStatusAndTimeStamp()[currentCommandIndex];
@@ -58,6 +61,7 @@ public class ControllerThread extends Thread  {
 					sc.out.write('@');
 					sc.out.write(first8Channels);
 					sc.out.write(remaining2Channels);
+					System.out.println(currentStatus);
 				} catch (IOException e) {
 					e.printStackTrace();
 				}

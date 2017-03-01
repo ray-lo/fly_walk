@@ -3,6 +3,7 @@ package webcamCapture.CaptureWithOpenCVMP4;
 import org.opencv.core.Mat;
 import org.opencv.videoio.VideoCapture;
 //import org.opencv.highgui.VideoCapture;
+import org.opencv.videoio.Videoio;
 
 import webcamCapture.MatAndTimeLong;
 
@@ -32,6 +33,7 @@ public class Producer implements Runnable {
 	
 	public void startCamera(){
 		//webcam.open();
+		webcam.set(Videoio.CAP_PROP_FPS, 30);
 		capturing = true;
 	}
 	

@@ -11,7 +11,7 @@ import webcamCapture.CaptureWithOpenCVMP4.*;
 import com.github.sarxos.webcam.WebcamResolution;
 
 import org.opencv.imgcodecs.*;
-
+ 
 public class NewOpenCVPCTest {
 	public static void main(String[] args) throws InterruptedException{
 		try {
@@ -22,7 +22,7 @@ public class NewOpenCVPCTest {
 			//cam.set(videoio., value)
 		//	cam.setViewSize(WebcamResolution.HD720.getSize());
 			
-			wpc.setFolderPathAndVideoName("/home/ray/WebcamTest", "sadLife3");
+			wpc.setFolderPathAndVideoName("/home/ray/WebcamTest", "sadLife5");
 			System.out.println(cam.get(Videoio.CAP_PROP_FPS));
 			wpc.start(cam);
 			wpc.prepareWriter("X264");

@@ -459,7 +459,5 @@ public class VideoRecorderGUI {
 		pBar.setString(c.getCycleCount() + "/" + c.getSetting().getTotalCycles());
 		pBar.setStringPainted(true);
 		//p
-
 	}
-
 }

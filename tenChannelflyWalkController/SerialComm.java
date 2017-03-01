@@ -11,6 +11,12 @@ import org.apache.commons.io.IOUtils;
 import gnu.io.*;
 
 public class SerialComm {
+	// if working on linux, remember to create softlink between /dev/ttyACM0 to /dev/ttyUSB1
+	//otherwise rxtx library may not be able to find the port
+	//type the following into command line
+	//sudo ln -sf /dev/ttyACM0 /dev/ttyUSB1
+	//
+	
 	//being of trial
 	
 //END of TRIAL

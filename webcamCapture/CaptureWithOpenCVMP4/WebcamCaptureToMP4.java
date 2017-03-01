@@ -54,7 +54,7 @@ public class WebcamCaptureToMP4 {
 			c.setVideoName(videoName);
 			Thread pThread = new Thread(p);
 			Thread cThread = new Thread(c);
-			//cam.get()
+			//cam.get() 
 			pThread.start();
 			cThread.start();
 			System.out.println("P and C running");

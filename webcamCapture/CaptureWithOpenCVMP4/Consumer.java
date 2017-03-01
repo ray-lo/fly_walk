@@ -86,6 +86,7 @@ public class Consumer implements Runnable{
 //						}	
 						oos.writeLong(bitl.getTimeLong());			
 						currentFrame++;
+						System.out.println("current frame" + currentFrame);
 					}
 					
 					
